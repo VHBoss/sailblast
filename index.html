@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=324 height=576 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=378 height=672 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -55,9 +55,9 @@
       var loaderUrl = buildUrl + "/Destroyer.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/Destroyer.data.br",
-        frameworkUrl: buildUrl + "/Destroyer.framework.js.br",
-        codeUrl: buildUrl + "/Destroyer.wasm.br",
+        dataUrl: buildUrl + "/Destroyer.data.gz",
+        frameworkUrl: buildUrl + "/Destroyer.framework.js.gz",
+        codeUrl: buildUrl + "/Destroyer.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "PlayJoy",
         productName: "Destroyer",
@@ -98,8 +98,8 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "324px";
-        canvas.style.height = "576px";
+        canvas.style.width = "378px";
+        canvas.style.height = "672px";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
